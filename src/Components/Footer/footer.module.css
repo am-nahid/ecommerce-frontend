@@ -1,0 +1,104 @@
+.footer{
+    background-color: #1e3932;
+    color: #ffff;
+}
+
+.footerSection1{
+    padding-top: 2rem;
+
+}
+.footerSection2{
+    padding-top: 2rem;
+}
+.footerSection3{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footerCntnr{
+   
+    display: flex;
+    justify-content: center;
+}
+
+.footer_sub_cntnr{
+    /* display: flex; */
+    width: 80%;
+}
+
+.footerSection{   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 2rem; */
+}
+
+.footerCntnr li{
+    list-style: none;
+    padding: 0.3rem 0;
+   
+}
+
+.footerCntnr ul{
+    padding: 0;
+}
+
+.footerCntnr a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.footerSection2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social{
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
+
+.Socialimage_cntnr{
+    display: flex;
+    gap: 20px;
+    padding-top: 2rem;
+}
+
+
+/* .followus{
+    padding-top: 2rem;
+} */
+
+.lastLayer{
+    display: flex;
+    justify-content: center;
+}
+
+.lastLayerSub{
+width: 80%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.contact_head{
+    padding: 1rem 0;
+}
+
+.ctext{
+    padding: 0.5rem 0;
+}
+.reserve{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+
+.reserve img {
+height: 1.5rem;
+width: 3rem;
+}

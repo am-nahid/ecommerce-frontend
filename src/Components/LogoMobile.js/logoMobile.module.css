@@ -1,0 +1,91 @@
+.hamburgerIcon{
+    height: 1rem;
+    /* padding-top: 2rem; */
+}
+
+.line{
+    width: 2rem;
+    height: 5px;
+    background-color: grey;
+    margin: 3px 0;
+}
+
+.LogoMV{
+        display: flex;
+    justify-content: space-between;
+}
+
+.mobileDropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileDropdown > div {
+    padding: 10px 0;
+    margin-bottom: 5px; /* Add margin to create spacing between elements */
+  }
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.shop_cart{
+    font-size: 1.5rem;
+    /* padding-top: 15px; */
+}
+
+.cartCntnr{
+        /* width: 4rem; */
+        display: flex;
+        padding-top: 10px;
+        font-size: 20px;
+}
+
+.searchCntnr{
+    background-color: #ffff;
+    display: flex;
+    height: 3rem;
+    box-sizing: border-box;
+    width: 20rem;
+    padding: 0px;
+    /* border-radius: 26px; */
+    overflow: hidden;
+    border-radius: 1.5rem;
+ 
+    /* transform: translate(-1rem); */
+}
+
+
+
+.searchBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background: #ffff;
+    border: none;
+    width: 3rem;
+    font-size: 18px;
+}
+
+
+.itemSearch{
+    text-align: center;
+    border: none;
+    height: 3rem;
+    width: 70%;
+    font-size: 18px;
+}
+
+/* .itemSearch {
+    border: none;
+    flex: 1; 
+    padding-left: 10px; 
+  } */
+
+.itemSearch:focus{
+    outline: none;
+}

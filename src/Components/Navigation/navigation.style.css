@@ -1,0 +1,301 @@
+
+
+
+.NavMainCon {
+    display: flex;
+    justify-content: center;
+}
+.NavSubCon {
+    display: flex;
+    justify-content: space-between;
+    width: 54%;
+    /* padding-bottom: 1rem; */
+}
+
+.navHrCon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.topNavHeight{
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.navHr {
+    width: 75%;
+    border: 2px solid #e6e6e6;
+    z-index: -1;
+}
+
+.topNavCon{
+    padding-bottom: 1rem;
+}
+
+ /* .shopDropDown{
+    position: absolute;
+    z-index: 2;
+    background-color: #ffff;
+    top: 7rem;
+    left: 28rem;
+    width: 9rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}  */
+
+.shopDropDownMobile {
+    /* position: absolute;
+    z-index: 2;
+    background-color: #ffff; */
+    width: 7rem;
+    height: 8rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    top: 7.8rem; */
+    left: 30%;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+    /* transform: translateX(10%); */
+    /* border-top: 10px solid transparent; */
+}
+
+.shopDropDownMobile div{
+    cursor: pointer;
+}
+
+
+.shopDropDownLaptop{
+    /* position: absolute;
+    z-index: 2;
+    background-color: #ffff; */
+    width: 6rem;
+    height: 6rem;
+    left: 40%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+    /* transform: translateX(10%); */
+    /* top: 7.8rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;*/
+} 
+/* 
+.shopDropDownLaptop div{
+    cursor: pointer;
+} */
+
+.shopDropDownFashion{
+    width: 6rem;
+    height: 6rem;
+    left: 50%;
+    /* z-index: 2;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 7.8rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+}
+
+/* .shopDropDownFashion div{
+    cursor: pointer;
+} */
+.shopDropDownWatch{
+    width: 7rem;
+    height: 5rem;
+    left: 60%;
+    /* z-index: 2;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 7.8rem; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* flex-wrap: wrap;
+    padding: 0 10px;
+    transform: translate(-20px);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+    /* box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px; */
+    /* box-shadow: rgb(1 10 20 / 69%) 0px 0px 0px 3px; */
+    /* border: 1px solid; */
+}
+
+/* .shopDropDownWatch div{
+ text-align: center;
+ cursor: pointer;
+} */
+
+.shopDropDownAces{
+    width: 6rem;
+    height: 9rem;
+    left: 70%;
+    z-index: 2;
+    /* background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 7.8rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+}
+
+/* .shopDropDownAces div{
+    cursor: pointer;
+} */
+
+
+.commonDropDown{
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 8.2rem;
+}
+
+
+.commonDropDown div{
+    text-align: center;
+    cursor: pointer;
+   }
+
+
+
+
+
+/* logo */
+
+.The_logo_cntr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.iShopLogo{
+    /* text-align: center; */
+    /* padding-top: 1.5rem; */
+    color: #FF4252;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: cursive;
+    padding-bottom: 1rem;
+}
+
+.searchCntnr{
+    display: flex;
+}
+.shoppingDisp{
+    cursor: pointer;
+}
+
+.itemSearch {
+    padding: 5px;
+}
+
+.searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userCntnr{
+   position: relative;
+   cursor: pointer;
+}
+
+.userDropdown {
+    position: absolute;
+    background-color: #fafafa;
+    height: 6rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    z-index: 3;
+    transform: translate(-20%,10%);
+    border: 1px solid;
+    flex-direction: column;
+}
+.hamburgerIcon{
+    display: none;
+}
+
+.a a{
+    text-decoration: none;
+    color: black;
+}
+
+.userIconBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .onlyMV{
+    display: none;
+  }
+  .customAvatar {
+    width: 29px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #007bff;
+    background-color: #4477CE;
+    color: white;
+    display: flex;
+    padding-bottom: 4px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+@media   (max-width:600px) {
+
+    .onlyWebView{
+        display: none;
+    }
+    .onlyMV{
+        display: block;
+      }
+
+    .hamburgerIcon{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+
+    .shoppingDisp{
+        position: absolute;
+        top: 5%;
+        right: 20%;
+    }
+
+  
+.The_logo_cntr {
+    padding-left: 20px;
+    padding-bottom: 0px;
+}  
+}

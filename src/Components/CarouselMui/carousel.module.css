@@ -1,0 +1,32 @@
+.carouselHeight {
+  height: 26rem;
+  width: 100%;
+}
+
+/* carousel.css */
+.arrowIcon {
+  font-size: 40px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.arrowIcon:hover {
+  background-color: transparent; /* Keep the same as the normal state */
+}
+
+.carouselCntnr button{
+  background-color: transparent;
+}
+
+/* .bannerImg {
+    height: 26rem;
+    position: absolute;
+    right: 18rem;
+    z-index: 1;
+} */
+
+@media (max-width:600px){
+  .carouselHeight {
+    height: 15rem;
+  }
+}

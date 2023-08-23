@@ -1,0 +1,47 @@
+/* .iShopLogo{
+    text-align: center;
+    padding-top: 1.5rem;
+    color: #FF4252;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: cursive;
+    padding-bottom: 1rem;
+}
+
+.searchCntnr{
+    display: flex;
+}
+.shoppingDisp{
+    cursor: pointer;
+}
+
+.itemSearch {
+    padding: 5px;
+}
+
+.searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userCntnr{
+   position: relative;
+   cursor: pointer;
+}
+
+.userDropdown {
+    position: absolute;
+    background-color: #fafafa;
+    height: 6rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    z-index: 3;
+    transform: translate(-20%,10%);
+    border: 1px solid;
+    flex-direction: column;
+} */

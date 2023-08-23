@@ -1,0 +1,22 @@
+.logo_mobile{
+    display: none;
+}
+
+.Logo_web {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:600px){
+.logo_mobile{
+    display: block;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding: 0px 20px;
+}
+
+.Logo_web{
+    display: none;
+}
+
+}

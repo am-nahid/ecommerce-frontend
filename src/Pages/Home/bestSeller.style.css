@@ -1,0 +1,20 @@
+.bestSellerCont{
+    padding-top: 2rem;
+}
+
+.BSHead {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.BSNavCont {
+    display: flex;
+    justify-content: center;
+}
+
+.BSNav {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
