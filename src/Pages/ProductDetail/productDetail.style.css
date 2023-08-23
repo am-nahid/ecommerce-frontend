@@ -100,4 +100,17 @@ align-items: center;
     position: relative;
 
 }
+.pd_text-title {
+    color: #4095a4;
+    text-align: center;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    height: 4.3em;
+    overflow: hidden;
+}
+
+.pd_text_cntnr {
+    width: 50%;
+}
 }

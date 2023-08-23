@@ -39,7 +39,7 @@ const handleCart=()=>{
   return (
     <div>
         {/* <div>FeaturedProducts</div> */}
-        <div className='FeaturedCntnr'>
+        <div className='FeaturedHomeCntnr'>
         <div className='FeaturedSubCntnr'>
       
         {

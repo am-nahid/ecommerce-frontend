@@ -143,4 +143,8 @@
 .LoginParent {
     height: 57vh;
 }
+
+.loginText {
+padding-top: 6rem;
+}
 }

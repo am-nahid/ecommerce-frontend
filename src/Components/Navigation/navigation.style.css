@@ -282,14 +282,15 @@
 
     .hamburgerIcon{
         display: block;
-        position: absolute;
-        top: 5%;
+        position: fixed;
+        top: 4%;
         right: 5%;
+        z-index: 5;
     }
 
     .shoppingDisp{
-        position: absolute;
-        top: 5%;
+        position: fixed;
+        top: 4%;
         right: 20%;
     }
 
@@ -297,5 +298,10 @@
 .The_logo_cntr {
     padding-left: 20px;
     padding-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 3.5rem;
+    z-index: 5;
 }  
 }

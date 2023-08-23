@@ -28,8 +28,11 @@ function DashBoard() {
       <div className="ecom_cntnr">
         <div className="dashboard-cntnr">
           <div className="dashboard-Subcntnr">
-            {data?.map((orderDetail) => {
+
+  <div className="dashboard-left-boxes">
+  {data?.map((orderDetail) => {
               return (
+                
                 <div key={orderDetail._id} className="dashboard-left-box">
                   <div className="dashboard-time">
                     <div className="order-details">Your Orders:</div>
@@ -68,8 +71,13 @@ function DashBoard() {
                     })}
                   </div>
                 </div>
+
               );
             })}
+  </div>
+           
+
+
             <div className="dashboard-right-box">
               <div className="dashboard-welcome">
                 <div>Hii, {name} welcome to iQoo Store</div>

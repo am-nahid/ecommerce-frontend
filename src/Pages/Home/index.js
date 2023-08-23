@@ -47,7 +47,10 @@ function Home() {
 
       {/* <CommonPageHeader/> */}
       {/* <TopNavigation/> */}
+      <div className="carousalTop">
+
       <Carousel2/>
+      </div>
       
       <BestSeller />
       <FeaturedProducts/>

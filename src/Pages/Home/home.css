@@ -38,6 +38,13 @@
     align-items: center;
 }
 
+.FeaturedHomeCntnr{
+    padding-top: 2rem ;
+    padding-bottom: 3rem;
+   display: flex;
+   justify-content: center;
+
+}
 .FeaturedCntnr{
     padding-top: 2rem ;
     padding-bottom: 3rem;
@@ -105,5 +112,15 @@
     .logo_web{
         display: none;
     }
+
+    
+
+    .carousalTop{
+        padding-top: 6rem;
+    }
+
+    .FeaturedCntnr {
+    padding-top: 6rem;
+}
 
 }
