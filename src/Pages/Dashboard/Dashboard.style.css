@@ -14,10 +14,11 @@
 }
 
 .dashboard-left-box {
-    /* width: 50%; */
-    border: 1px solid;
-    box-sizing: border-box;
-    border-radius: 30px;
+       /* width: 50%; */
+       border: 1px solid;
+       box-sizing: border-box;
+       border-radius: 30px;
+       max-width: 90%;
 }
 
 .dashboard-time {
@@ -137,7 +138,7 @@ padding-bottom: 1rem ;
 } */
 
 .dashboard-left-box {
-    width: 100%;
+    max-width: 100%;
     }
 
     

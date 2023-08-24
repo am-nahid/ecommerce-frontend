@@ -37,7 +37,7 @@ function SignupPage() {
             localStorage.setItem("token",res.data.token)
             localStorage.setItem("name",res.data.name)
             localStorage.setItem("user_id",res.data._id)
-            navigate("/",{replace:true});
+            navigate("/");
           }else {
             setErr("something went wrong");
           }

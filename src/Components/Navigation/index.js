@@ -48,8 +48,9 @@ setUser(!user)
     localStorage.clear()
     setUser(false);
     dispatch(userLoggedOut())
+    navi('/')
   }
-  const user_id = JSON.parse(localStorage.getItem("user_id")) || 0
+  const user_id = localStorage.getItem("user_id") || 0
 
   const searchHandle=(event)=>{
     event.preventDefault()
@@ -232,6 +233,28 @@ setUser(!user)
       </div>
       {/* <div className="homeDropDown"></div> */}
    <div className="onlyMV">
+   {
+              token 
+              ?
+              (
+                <div>
+                  
+                <div className='userIconBtn' onClick={handleUserbtn}><div className='customAvatar'>{name[0]}</div>  </div>
+                {
+              user &&
+              <div onClick={handleUserbtn} className='userDropdown'>
+                   <div onClick={()=>{navi('/dashboard')}}>Dashboard</div>
+                   <div onClick={handleLogout}>Logout</div>
+              </div>
+            }
+            </div>
+              )
+              :
+              <div className='userIconBtn' onClick={()=>{navi('/login')
+              // setShow(!show)
+            }
+            }><FaUser />&nbsp; <span>Login</span></div>
+              }
     {/* <div onClick={()=>navi('/items')} className={style.cartCntnr}><div className={style.shop_cart}> <FaShoppingCart/> </div>&nbsp;<span><span>0</span> item</span></div>  */}
     <div onClick={()=>setShow(!show)} className="hamburgerIcon">
             <div className={style.line}></div>
@@ -240,13 +263,12 @@ setUser(!user)
         </div>
       {show &&
         <div className={style.mobileDropdown} >
-             {
+             {/* {
               token 
               ?
               (
                 <div>
-                {/* <div className='userIconBtn' onClick={handleUserbtn}><FaUser /> <span>{name}</span></div> */}
-                {/* <div className='userIconBtn' onClick={handleUserbtn}><Person /> <span>{name}</span></div> */}
+
                 <div className='userIconBtn' onClick={handleUserbtn}><div className='customAvatar'>{name[0]}</div>  <span>{name}</span></div>
                 {
               user &&
@@ -262,7 +284,7 @@ setUser(!user)
               setShow(!show)
             }
             }><FaUser />&nbsp; <span>Login</span></div>
-              }
+              } */}
              
             <div>
             <div className={style.searchCntnr}>

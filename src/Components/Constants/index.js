@@ -11,4 +11,5 @@ export const localHost = "http://localhost:4040"
 export const render = "https://ecommerce-server-rtl5.onrender.com"
 
 export const host = "https://ecommerce-server-ud4q.onrender.com"
+// export const host = "http://localhost:4040"
 

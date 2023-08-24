@@ -9,6 +9,7 @@ function DashBoard() {
   const [data, setData] = useState([]);
   const navi = useNavigate();
   const user_id = useSelector((state) => state.productAdd.user_id);
+  // console.log(user_id);
   const LocalAPI = `http://localhost:4040/product/order-user-detail/${user_id}`;
   const API = `${host}/product/order-user-detail/${user_id}`;
 
@@ -20,7 +21,7 @@ function DashBoard() {
       .get(API)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err, "error from dashboard"));
-  }, []);
+  }, [API]);
 
   // console.log(data);
   return (

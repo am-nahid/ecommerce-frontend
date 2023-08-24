@@ -283,15 +283,15 @@
     .hamburgerIcon{
         display: block;
         position: fixed;
-        top: 4%;
+        top: 3%;
         right: 5%;
         z-index: 5;
     }
 
     .shoppingDisp{
         position: fixed;
-        top: 4%;
-        right: 20%;
+        top: 3%;
+        right: 35%;
     }
 
   
@@ -301,7 +301,33 @@
     position: fixed;
     width: 100%;
     background: white;
-    height: 3.5rem;
+    height: 3.6rem;
     z-index: 5;
+    box-sizing: border-box;
 }  
+
+.iShopLogo {
+    font-size: 22px;
+}
+
+.userIconBtn {
+    position: fixed;
+    z-index: 5;
+    right: 16%;
+    top: 3%;
+}
+
+
+
+.userDropdown {
+    top: 3.2rem;
+    z-index: 6;
+    right: 0%;
+    position: fixed;
+}
+
+.customAvatar {
+    position: relative;
+        bottom: 3px;
+    }
 }

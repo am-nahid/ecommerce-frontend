@@ -3,14 +3,15 @@ import { toast } from 'react-toastify'
 
 const initialState = {
   user_id: localStorage.getItem("user_id")
-  ? JSON.parse(localStorage.getItem("user_id"))
-  : null,
-  cartItems:localStorage.getItem("cartItems")
-  ? JSON.parse(localStorage.getItem("cartItems"))
-  : [],
-  cartTotalQuantity : 0,
-  cartTotalAmount:0
-}
+    ? (localStorage.getItem("user_id"))
+    : null,
+  cartItems: localStorage.getItem("cartItems")
+    ? JSON.parse(localStorage.getItem("cartItems"))
+    : [],
+  cartTotalQuantity: 0,
+  cartTotalAmount: 0,
+};
+
 
 export const ProductAddSlice = createSlice({
    name:"cart",
