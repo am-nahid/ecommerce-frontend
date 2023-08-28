@@ -331,3 +331,20 @@
         bottom: 3px;
     }
 }
+
+
+@media   (min-width:600px) and (max-width:1200px) {
+
+    
+    .NavSubCon {
+        width: 75%;
+    }
+
+    .navHr {
+        width: 85%;
+    }
+
+    .commonDropDown {
+      display: none;
+    }
+}

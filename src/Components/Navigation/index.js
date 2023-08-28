@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaUser, FaShoppingCart, FaSearch} from "react-icons/fa";
 import "./navigation.style.css";
 import style from '../LogoMobile.js/logoMobile.module.css'
-import {NavLink, useNavigate} from 'react-router-dom'
+import {NavLink, useNavigate, Link} from 'react-router-dom'
 
 import SignupButton from '../SignupButton/Signup';
 import LoginButton from '../LoginButton';
@@ -43,6 +43,12 @@ setUser(!user)
 // console.log("working");
   }
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      searchHandle(e);
+    }
+  };
+
   const handleLogout = ()=>{
     // localStorage.removeItem("token");
     localStorage.clear()
@@ -63,10 +69,10 @@ setUser(!user)
   return (
     <>
     <div className="The_logo_cntr">
-    <div className='iShopLogo'>iQoo Store</div>
+    <div className='iShopLogo'><Link to={'/'} style={{textDecoration:'none', color: "#FF4252"}}>iQoo Store</Link></div>
     <div className="HeaderRight ">
     <div className='searchCntnr onlyWebView'>
-            <input type="text" className='itemSearch' value={search} placeholder='search here' onChange={(event)=>{setSearch(event.target.value)}}/>
+            <input type="text" className='itemSearch' value={search} placeholder='search here' onChange={(event)=>{setSearch(event.target.value)}} onKeyDown={handleKeyPress} />
             {/* <button><FontAwesomeIcon icon={faMagnifyingGlass} /></button> */}
             <button className='searchBtn' onClick={searchHandle}><FaSearch/></button>
           </div>
@@ -85,9 +91,9 @@ setUser(!user)
               ?
               (
                 <div>
-                {/* <div className='userIconBtn' onClick={handleUserbtn}><FaUser /> <span>{name}</span></div> */}
-                {/* <div className='userIconBtn' onClick={handleUserbtn}><Person /> <span>{name}</span></div> */}
-                <div className='userIconBtn' onClick={handleUserbtn}><div className='customAvatar'>{name[0]}</div>  <span>{name}</span></div>
+               
+                <div className='userIconBtn' onClick={handleUserbtn}><div className='customAvatar'>{name[0]}</div>  <span>{name}</span>
+                </div>
                 {
               user &&
               <div onClick={handleUserbtn} className='userDropdown'>
@@ -289,7 +295,7 @@ setUser(!user)
             <div>
             <div className={style.searchCntnr}>
                     <button onClick={searchHandle} className={style.searchBtn}><FaSearch/></button>
-                    <input type="text" className={style.itemSearch} placeholder='search here' onChange={(event)=>{setSearch(event.target.value)}}/>
+                    <input type="text" className={style.itemSearch} placeholder='search here' onChange={(event)=>{setSearch(event.target.value)}} onKeyDown={handleKeyPress}/>
             </div>
             </div>
           <div className="a" onClick={()=>setShow(!show)} ><NavLink to='/'>HOME</NavLink></div>

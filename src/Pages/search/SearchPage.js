@@ -1,12 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import './search.style.css'
 import { GenericAddToCartButton } from '../../Components';
 import { host } from '../../Components/Constants';
 
 function SearchPage() {
     const [data,setData] = useState([])
+    const navi = useNavigate()
     const [nullHandle,setNullHandle] = useState(false)
     const location = useLocation()
     // console.log(location.state);
@@ -14,7 +15,7 @@ function SearchPage() {
     useEffect(()=>{
         const query = location.state
         // console.log(query);
-       if(!query){
+       if(!query || data===[]){
         setNullHandle(true) 
         setData([])
        }else{
@@ -28,6 +29,11 @@ function SearchPage() {
       
 
     },[location.state])
+
+    const handleDetail=(item)=>{
+      navi(`${item.search_category}/${item.ide}` , {state:item})
+  }
+  
 
   return (
     <div className='ecom_cntnr'>
@@ -45,11 +51,11 @@ function SearchPage() {
             return(
         <div className='Featcard'  key={item._id}>
                  <img  
-                //  onClick={()=>handleDetail(item)}
+                 onClick={()=>handleDetail(item)}
                   src={item.image}
                  alt='slow internet'/>
                  <div  
-                //  onClick={()=>handleDetail(item)} 
+                 onClick={()=>handleDetail(item)} 
                  className='product_title'>{item.p_name}</div>
                  <p>Price: ₹{item.price}</p>
                  {/* <button

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from '../Pages/Home'
-import { Accessories, DashBoard, Fashion,  Laptops, Mobiles,  ProductDetails,  SearchPage,  SignupPage, StoreEcom, SubNavRoute, Watches } from '../Pages'
+import { Accessories, DashBoard, Fashion,  Laptops, Mobiles,  PageNotFond,  ProductDetails,  SearchPage,  SignupPage, StoreEcom, SubNavRoute, Watches } from '../Pages'
 import Login from '../Pages/Login/LoginPage'
 import ItemsInCart from '../Pages/cart/Items'
 import { Logo,EcommerceComs,TopNavigation, LogoMobile } from '../Components'
@@ -44,6 +44,8 @@ function RouterComp() {
   <Route path='/:cat/:subCat' element={<SubNavRoute/>}/>
   <Route path='/:cat/:subCat/:id' element={<ProductDetails/>}/>
   {/* <Route path='/f' element={<Items/>}/> */}
+
+  <Route path='*' element={<PageNotFond/>}/>
 </Routes>
 <Footer/>
 </BrowserRouter>

@@ -1,0 +1,13 @@
+.pgCenter{
+    text-align: center;
+}
+
+.pageNotFound-Link {
+    padding-top: 2rem;
+}
+
+.pageNotFound {
+    color: chocolate;
+    font-family: auto;
+    padding-top: 2rem;
+}

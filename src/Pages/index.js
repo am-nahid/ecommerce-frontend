@@ -15,7 +15,7 @@ import SignupPage from "./Signup/Signup";
 import ProductDetails from "./ProductDetail/ProductDetails";
 import SubNavRoute from "./SubNavRoute/SubNavRoute";
 import SearchPage from "./search/SearchPage";
+import PageNotFond from "./pageNotFound/PageNotFond";
 
 
-
-export {Home, SignupPage,Accessories,StoreEcom, Login, Mobiles, Fashion, Watches, Laptops, ProductDetails,SubNavRoute, DashBoard, SearchPage}
+export {Home, SignupPage,Accessories,StoreEcom, Login, Mobiles, Fashion, Watches, Laptops, ProductDetails,SubNavRoute, DashBoard, SearchPage, PageNotFond}
