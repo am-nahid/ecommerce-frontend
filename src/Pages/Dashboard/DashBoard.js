@@ -16,12 +16,12 @@ function DashBoard() {
   const name = localStorage.getItem("name");
   // console.log(name);
 
-  useEffect(() => {
-    axios
-      .get(API)
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err, "error from dashboard"));
-  }, [API]);
+  // useEffect(() => {
+  //   axios
+  //     .get(API)
+  //     .then((res) => setData(res.data))
+  //     .catch((err) => console.log(err, "error from dashboard"));
+  // }, [API]);
 
   // console.log(data);
   return (
@@ -30,7 +30,7 @@ function DashBoard() {
         <div className="dashboard-cntnr">
           <div className="dashboard-Subcntnr">
 
-  <div className="dashboard-left-boxes">
+  {/* <div className="dashboard-left-boxes">
   {data?.map((orderDetail) => {
               return (
                 
@@ -75,7 +75,7 @@ function DashBoard() {
 
               );
             })}
-  </div>
+  </div> */}
            
 
 

@@ -5,12 +5,13 @@
 }
 
 
-.dashboard-Subcntnr{
+.dashboard-Subcntnr {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-   gap: 40px;
-   padding-bottom: 2rem;
+    gap: 40px;
+    padding-bottom: 2rem;
+    justify-content: center;
 }
 
 .dashboard-left-box {
