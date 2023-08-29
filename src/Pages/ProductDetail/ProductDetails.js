@@ -65,7 +65,7 @@ const handleCart=()=>{
         </div>
        <div className='pd_hr_cntr'>  <hr className='pd_hr'/></div>
           <div className='similar-prod'>Similar Products</div>
-        <div className='FeaturedCntnr'>
+        <div className='PD-FeaturedCntnr'>
       
         <div className='FeaturedSubCntnr'>
         

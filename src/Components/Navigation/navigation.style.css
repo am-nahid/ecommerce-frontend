@@ -243,7 +243,9 @@
 
 .a a{
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: #ffff;
+    font-weight: 500;
 }
 
 .userIconBtn {

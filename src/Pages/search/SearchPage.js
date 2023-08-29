@@ -8,13 +8,14 @@ import { host } from '../../Components/Constants';
 function SearchPage() {
     const [data,setData] = useState([])
     const navi = useNavigate()
-    const [nullHandle,setNullHandle] = useState(false)
+    const [nullHandle,setNullHandle] = useState(true)
     const location = useLocation()
     // console.log(location.state);
+    console.log(nullHandle);
 
     useEffect(()=>{
         const query = location.state
-        // console.log(query);
+       
        if(!query || data===[]){
         setNullHandle(true) 
         setData([])
@@ -23,12 +24,20 @@ function SearchPage() {
 
         const LocalAPI =`${host}/api/search?keyword=${query}` 
         axios.get(LocalAPI)
-        .then(res=>setData(res.data))
+        .then(res=>{
+          setData(res.data)
+         if(res.data!==[]){
+          setNullHandle(false) 
+         }
+         
+        })
         .catch(err=>console.log(err))
        }
       
 
     },[location.state])
+
+// console.log(data);
 
     const handleDetail=(item)=>{
       navi(`${item.search_category}/${item.ide}` , {state:item})
@@ -76,3 +85,4 @@ function SearchPage() {
 }
 
 export default SearchPage
+
