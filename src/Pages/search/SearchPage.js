@@ -11,7 +11,7 @@ function SearchPage() {
     const [nullHandle,setNullHandle] = useState(true)
     const location = useLocation()
     // console.log(location.state);
-    console.log(nullHandle);
+    // console.log(nullHandle);
 
     useEffect(()=>{
         const query = location.state

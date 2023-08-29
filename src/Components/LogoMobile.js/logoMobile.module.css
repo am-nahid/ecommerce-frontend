@@ -20,16 +20,16 @@
     flex-direction: column;
     align-items: center;
     padding-top: 5rem; */
+    align-items: center;
+    background-color: #414343b5;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* padding-top: 4rem; */
-    position: absolute;
-    z-index: 5;
-    background-color: #414343b5;
-    top: 4rem;
-    color: white;
+    /* position: absolute; */
+    top: 3.5rem;
     width: 100%;
+    z-index: 5;
+    position: fixed;
 }
 
 .mobileDropdown > div {
